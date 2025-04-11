@@ -7,9 +7,9 @@ import theme from './theme'
 import './i18n'
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <ChakraProvider value={theme}>
-      <App />
-    </ChakraProvider>
-  </StrictMode>,
+   <StrictMode>
+      <ChakraProvider value={theme}>
+         <App />
+      </ChakraProvider>
+   </StrictMode>,
 )
