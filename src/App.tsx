@@ -1,10 +1,17 @@
 import { useState } from 'react'
 import { Box } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
+import styled from '@emotion/styled'
 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+const TestCss = styled.div`
+  height: 100px;
+  width: 100px;
+  background-color: red;
+`
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +40,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <Box>Hello World Using Chakra UI {t('welcome')}</Box>
+      <TestCss/>
     </>
   )
 }
