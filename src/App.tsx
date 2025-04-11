@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Box } from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next'
 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -7,6 +8,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const { t } = useTranslation()
 
   return (
     <>
@@ -30,7 +32,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Box>Hello World Using Chakra UI</Box>
+      <Box>Hello World Using Chakra UI {t('welcome')}</Box>
     </>
   )
 }
