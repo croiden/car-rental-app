@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+   ui:
+      build:
+         context: .
+         dockerfile: Dockerfile
+      ports:
+         - '8081:80'
+      container_name: car-rental-ui-app
+      restart: unless-stopped

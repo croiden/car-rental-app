@@ -52,3 +52,9 @@ export default tseslint.config({
    },
 })
 ```
+
+build and run the app using container:
+
+```bash
+docker compose up --build
+```
