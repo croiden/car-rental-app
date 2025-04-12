@@ -1,0 +1,182 @@
+{
+   "1": {
+      "id": "1",
+      "model": "Model 3",
+      "vendor": "Tesla",
+      "carType": "sedan",
+      "available": true,
+      "location": { "lat": 25.2, "lng": 55.3 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "2": {
+      "id": "2",
+      "model": "Golf",
+      "vendor": "Volkswagen",
+      "carType": "hatchback",
+      "available": true,
+      "location": { "lat": 25.1, "lng": 55.4 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "3": {
+      "id": "3",
+      "model": "Polo",
+      "vendor": "Volkswagen",
+      "carType": "hatchback",
+      "available": true,
+      "location": { "lat": 25.3, "lng": 55.2 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "4": {
+      "id": "4",
+      "model": "Polo",
+      "vendor": "Volkswagen",
+      "carType": "hatchback",
+      "available": true,
+      "location": { "lat": 25.0, "lng": 55.1 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "5": {
+      "id": "5",
+      "model": "Range Rover Sport",
+      "vendor": "Land Rover",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 24.5, "lng": 54.4 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "6": {
+      "id": "6",
+      "model": "911 Carrera",
+      "vendor": "Porsche",
+      "carType": "sedan",
+      "available": true,
+      "location": { "lat": 24.4, "lng": 54.6 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "7": {
+      "id": "7",
+      "model": "Model S",
+      "vendor": "Tesla",
+      "carType": "sedan",
+      "available": true,
+      "location": { "lat": 24.6, "lng": 54.5 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "8": {
+      "id": "8",
+      "model": "Tiguan",
+      "vendor": "Volkswagen",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 25.35, "lng": 55.2 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "9": {
+      "id": "9",
+      "model": "Macan",
+      "vendor": "Porsche",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 25.1, "lng": 55.3 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "10": {
+      "id": "10",
+      "model": "Discovery",
+      "vendor": "Land Rover",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 24.45, "lng": 54.3 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "11": {
+      "id": "11",
+      "model": "Model Y",
+      "vendor": "Tesla",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 25.0, "lng": 55.0 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "12": {
+      "id": "12",
+      "model": "Arteon",
+      "vendor": "Volkswagen",
+      "carType": "sedan",
+      "available": true,
+      "location": { "lat": 24.35, "lng": 54.7 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "13": {
+      "id": "13",
+      "model": "Panamera",
+      "vendor": "Porsche",
+      "carType": "sedan",
+      "available": true,
+      "location": { "lat": 25.2, "lng": 55.5 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "14": {
+      "id": "14",
+      "model": "Velar",
+      "vendor": "Land Rover",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 24.6, "lng": 54.4 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "15": {
+      "id": "15",
+      "model": "ID.4",
+      "vendor": "Volkswagen",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 25.3, "lng": 55.1 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "16": {
+      "id": "16",
+      "model": "Taycan",
+      "vendor": "Porsche",
+      "carType": "sedan",
+      "available": true,
+      "location": { "lat": 24.4, "lng": 54.5 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "17": {
+      "id": "17",
+      "model": "Touareg",
+      "vendor": "Volkswagen",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 25.25, "lng": 55.35 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "18": {
+      "id": "18",
+      "model": "Defender",
+      "vendor": "Land Rover",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 24.3, "lng": 54.35 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   },
+   "19": {
+      "id": "19",
+      "model": "Model X",
+      "vendor": "Tesla",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 25.05, "lng": 55.05 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+   },
+   "20": {
+      "id": "20",
+      "model": "Cayenne",
+      "vendor": "Porsche",
+      "carType": "suv",
+      "available": true,
+      "location": { "lat": 24.55, "lng": 54.6 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+   }
+}
