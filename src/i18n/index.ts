@@ -5,12 +5,13 @@ i18n.use(initReactI18next).init({
    resources: {
       en: {
          translation: {
-            welcome: 'Welcome Lawrence Lobo',
+            available_cars: 'Available Cars',
+            rented_cars: 'Rented Cars',
          },
       },
       fr: {
          translation: {
-            welcome: 'Bienvenue',
+            available_cars: 'Voitures Disponibles',
          },
       },
    },
