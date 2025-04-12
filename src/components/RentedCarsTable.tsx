@@ -41,7 +41,12 @@ const RentedCarsTable = () => {
                      <Table.Cell>{bookedBy}</Table.Cell>
                      <Table.Cell>{formatDate(new Date(bookedAt || ''))}</Table.Cell>
                      <Table.Cell textAlign="end">
-                        <Button colorPalette="orange" variant="solid" onClick={() => handleReturnCar(carId)}>
+                        <Button
+                           colorPalette="orange"
+                           variant="solid"
+                           onClick={() => handleReturnCar(carId)}
+                           aria-label={`Return ${model} booked by ${bookedBy}`}
+                        >
                            <IoMdReturnRight />
                         </Button>
                      </Table.Cell>

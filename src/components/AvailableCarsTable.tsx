@@ -38,7 +38,12 @@ const AvailableCarsTable = () => {
                      </Table.Cell>
                      <Table.Cell>{vendor}</Table.Cell>
                      <Table.Cell textAlign="end">
-                        <Button colorPalette="teal" variant="solid" onClick={() => handleRentCar(carId)}>
+                        <Button
+                           colorPalette="teal"
+                           variant="solid"
+                           onClick={() => handleRentCar(carId)}
+                           aria-label={`Rent ${model} from ${vendor}`}
+                        >
                            <MdCarRental />
                         </Button>
                      </Table.Cell>

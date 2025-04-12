@@ -31,7 +31,7 @@ const PageBody = () => {
                               </Accordion.ItemBody>
                            </Accordion.ItemContent>
                         </Accordion.Item>
-                        <Accordion.Item value={'Available'}>
+                        <Accordion.Item value={'AVAILABLE'}>
                            <Accordion.ItemTrigger>
                               <Span flex="1">
                                  {t('available_cars')}
