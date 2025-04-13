@@ -6,7 +6,8 @@
       "carType": "sedan",
       "available": true,
       "location": { "lat": 25.2, "lng": 55.3 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1561580125-028ee3bd62eb?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "2": {
       "id": "2",
@@ -15,7 +16,8 @@
       "carType": "hatchback",
       "available": true,
       "location": { "lat": 25.1, "lng": 55.4 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1572811298797-9eecadf6cb24?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "3": {
       "id": "3",
@@ -23,8 +25,9 @@
       "vendor": "Volkswagen",
       "carType": "hatchback",
       "available": true,
-      "location": { "lat": 25.3, "lng": 55.2 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "location": { "lat": 25.142176699419718, "lng": 55.27633666992188 },
+      "address": { "state": "Dubai", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1556155304-28f97c2c4c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxWb2xrc3dhZ2VuJTIwUG9sbyUyMGhhdGNoYmFja3xlbnwwfDB8fHwxNzQ0NDcyMDc4fDA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "4": {
       "id": "4",
@@ -32,8 +35,9 @@
       "vendor": "Volkswagen",
       "carType": "hatchback",
       "available": true,
-      "location": { "lat": 25.0, "lng": 55.1 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "location": { "lat": 25, "lng": 55.1 },
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1556155304-28f97c2c4c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxWb2xrc3dhZ2VuJTIwUG9sbyUyMGhhdGNoYmFja3xlbnwwfDB8fHwxNzQ0NDcyMDc4fDA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "5": {
       "id": "5",
@@ -42,7 +46,8 @@
       "carType": "suv",
       "available": true,
       "location": { "lat": 24.5, "lng": 54.4 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1724723582371-3cae3a9fa32c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "6": {
       "id": "6",
@@ -51,7 +56,8 @@
       "carType": "sedan",
       "available": true,
       "location": { "lat": 24.4, "lng": 54.6 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1623564493136-711e0bf8df59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxQb3JzY2hlJTIwOTExJTIwQ2FycmVyYSUyMHNlZGFufGVufDB8MHx8fDE3NDQ0NzIwNzl8MA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "7": {
       "id": "7",
@@ -59,8 +65,9 @@
       "vendor": "Tesla",
       "carType": "sedan",
       "available": true,
-      "location": { "lat": 24.6, "lng": 54.5 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "location": { "lat": 24.642648469375377, "lng": 54.76135253906251 },
+      "address": { "city": "Al Samhah", "state": "Abu Dhabi Emirate", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1536882666204-4b33cd3cb518?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxUZXNsYSUyME1vZGVsJTIwUyUyMHNlZGFufGVufDB8MHx8fDE3NDQ0NzIwNzl8MA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "8": {
       "id": "8",
@@ -68,8 +75,9 @@
       "vendor": "Volkswagen",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 25.35, "lng": 55.2 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "location": { "lat": 24.91570866775934, "lng": 55.136947631835945 },
+      "address": { "state": "Dubai", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1696705389800-8c61e47aff97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxWb2xrc3dhZ2VuJTIwVGlndWFuJTIwc3V2fGVufDB8MHx8fDE3NDQ0NzIwNzl8MA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "9": {
       "id": "9",
@@ -78,7 +86,8 @@
       "carType": "suv",
       "available": true,
       "location": { "lat": 25.1, "lng": 55.3 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1736794111717-bb95d80466be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxQb3JzY2hlJTIwTWFjYW4lMjBzdXZ8ZW58MHwwfHx8MTc0NDQ3MjA3OXww&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "10": {
       "id": "10",
@@ -86,8 +95,9 @@
       "vendor": "Land Rover",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 24.45, "lng": 54.3 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "location": { "lat": 24.377902624772954, "lng": 54.549179077148445 },
+      "address": { "city": "Mohamed Bin Zayed City", "state": "Abu Dhabi Emirate", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1599159881594-374f649ffcea?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "11": {
       "id": "11",
@@ -95,8 +105,9 @@
       "vendor": "Tesla",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 25.0, "lng": 55.0 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "location": { "lat": 25.00636158182178, "lng": 54.99022006988526 },
+      "address": { "state": "Dubai", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1696448415543-e65da83c6b6e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "12": {
       "id": "12",
@@ -105,7 +116,8 @@
       "carType": "sedan",
       "available": true,
       "location": { "lat": 24.35, "lng": 54.7 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1655285267202-8faebd47e486?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxWb2xrc3dhZ2VuJTIwQXJ0ZW9uJTIwc2VkYW58ZW58MHwwfHx8MTc0NDQ3MjA3OXww&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "13": {
       "id": "13",
@@ -114,7 +126,8 @@
       "carType": "sedan",
       "available": true,
       "location": { "lat": 25.2, "lng": 55.5 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1611859266720-147cc87658f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxQb3JzY2hlJTIwUGFuYW1lcmElMjBzZWRhbnxlbnwwfDB8fHwxNzQ0NDcyMDc5fDA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "14": {
       "id": "14",
@@ -122,8 +135,9 @@
       "vendor": "Land Rover",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 24.6, "lng": 54.4 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "location": { "lat": 24.560238808695555, "lng": 54.64942932128907 },
+      "address": { "city": "Al Bahyah", "state": "Abu Dhabi Emirate", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1546982491-7e976db2dc82?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "15": {
       "id": "15",
@@ -131,8 +145,9 @@
       "vendor": "Volkswagen",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 25.3, "lng": 55.1 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "location": { "lat": 24.74932562669722, "lng": 54.89318847656251 },
+      "address": { "city": "Al Layyan", "state": "Abu Dhabi Emirate", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1683444126212-50c0aa2a421b?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "16": {
       "id": "16",
@@ -141,7 +156,8 @@
       "carType": "sedan",
       "available": true,
       "location": { "lat": 24.4, "lng": 54.5 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1607892380547-b405ef9e7ba1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxQb3JzY2hlJTIwVGF5Y2FuJTIwc2VkYW58ZW58MHwwfHx8MTc0NDQ3MjA3OXww&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "17": {
       "id": "17",
@@ -150,7 +166,8 @@
       "carType": "suv",
       "available": true,
       "location": { "lat": 25.25, "lng": 55.35 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" },
+      "imageUrl": "https://images.unsplash.com/photo-1655286860338-38371cf3bbf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxWb2xrc3dhZ2VuJTIwVG91YXJlZyUyMHN1dnxlbnwwfDB8fHwxNzQ0NDcyMDc5fDA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "18": {
       "id": "18",
@@ -158,8 +175,9 @@
       "vendor": "Land Rover",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 24.3, "lng": 54.35 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "location": { "lat": 24.421518573140055, "lng": 54.4314193725586 },
+      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi Emirate", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1491446559770-3fc03a481cdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxMYW5kJTIwUm92ZXIlMjBEZWZlbmRlciUyMHN1dnxlbnwwfDB8fHwxNzQ0NDcyMDgwfDA&ixlib=rb-4.0.3&q=80&w=1080"
    },
    "19": {
       "id": "19",
@@ -167,8 +185,9 @@
       "vendor": "Tesla",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 25.05, "lng": 55.05 },
-      "address": { "city": "Dubai", "state": "Dubai", "country": "UAE" }
+      "location": { "lat": 25.128811779454868, "lng": 55.233078002929695 },
+      "address": { "state": "Dubai", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1707002752329-5a4a889f7de9?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
    },
    "20": {
       "id": "20",
@@ -176,7 +195,8 @@
       "vendor": "Porsche",
       "carType": "suv",
       "available": true,
-      "location": { "lat": 24.55, "lng": 54.6 },
-      "address": { "city": "Abu Dhabi", "state": "Abu Dhabi", "country": "UAE" }
+      "location": { "lat": 24.639527880633413, "lng": 54.81216430664063 },
+      "address": { "city": "Khalifa Industrial", "state": "Abu Dhabi Emirate", "country": "United Arab Emirates" },
+      "imageUrl": "https://images.unsplash.com/photo-1517942491415-4fc176d3c2f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzY5MjR8MHwxfHNlYXJjaHwxfHxQb3JzY2hlJTIwQ2F5ZW5uZSUyMHN1dnxlbnwwfDB8fHwxNzQ0NDcyMDc4fDA&ixlib=rb-4.0.3&q=80&w=1080"
    }
 }

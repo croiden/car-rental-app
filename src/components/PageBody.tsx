@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Accordion, Box, Card, Flex, Span } from '@chakra-ui/react'
+import { Box, Card, Flex, Tabs } from '@chakra-ui/react'
 
 import RentedCarsTable from './RentedCarsTable'
 import AvailableCarsTable from './AvailableCarsTable'
@@ -12,43 +12,29 @@ const PageBody = () => {
 
    return (
       <Flex gap={4} pt={4}>
-         <Box overflow="auto" minW="550px">
-            <Box height={'calc(100vh - 100px)'} mr={4}>
-               <Card.Root>
-                  <Card.Body>
-                     <Accordion.Root multiple defaultValue={['RENTED', 'AVAILABLE']}>
-                        <Accordion.Item value={'RENTED'}>
-                           <Accordion.ItemTrigger>
-                              <Span flex="1">
-                                 {t('rented_cars')}
-                                 {` (${rentedCars.length})`}
-                              </Span>
-                              <Accordion.ItemIndicator />
-                           </Accordion.ItemTrigger>
-                           <Accordion.ItemContent>
-                              <Accordion.ItemBody>
-                                 <RentedCarsTable />
-                              </Accordion.ItemBody>
-                           </Accordion.ItemContent>
-                        </Accordion.Item>
-                        <Accordion.Item value={'AVAILABLE'}>
-                           <Accordion.ItemTrigger>
-                              <Span flex="1">
-                                 {t('available_cars')}
-                                 {` (${availableCars.length})`}
-                              </Span>
-                              <Accordion.ItemIndicator />
-                           </Accordion.ItemTrigger>
-                           <Accordion.ItemContent>
-                              <Accordion.ItemBody>
-                                 <AvailableCarsTable />
-                              </Accordion.ItemBody>
-                           </Accordion.ItemContent>
-                        </Accordion.Item>
-                     </Accordion.Root>
-                  </Card.Body>
-               </Card.Root>
-            </Box>
+         <Box minW="550px">
+            <Card.Root height={'calc(100vh - 100px)'}>
+               <Card.Body>
+                  <Tabs.Root lazyMount unmountOnExit defaultValue="AVAILABLE">
+                     <Tabs.List>
+                        <Tabs.Trigger value="AVAILABLE">
+                           {t('available_cars')}
+                           {` (${availableCars.length})`}
+                        </Tabs.Trigger>
+                        <Tabs.Trigger value="RENTED">
+                           {t('rented_cars')}
+                           {` (${rentedCars.length})`}
+                        </Tabs.Trigger>
+                     </Tabs.List>
+                     <Tabs.Content value="AVAILABLE">
+                        <AvailableCarsTable />
+                     </Tabs.Content>
+                     <Tabs.Content value="RENTED">
+                        <RentedCarsTable />
+                     </Tabs.Content>
+                  </Tabs.Root>
+               </Card.Body>
+            </Card.Root>
          </Box>
          <Card.Root w="100%">
             <Map />
