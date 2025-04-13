@@ -1,3 +1,4 @@
+import { CAR_TYPE_DISPLAY_VALUES } from '@/constants'
 import { Car } from '@/types'
 import { formatDate } from '@/utils'
 import { Flex, Text, Image } from '@chakra-ui/react'
@@ -22,7 +23,7 @@ const CarDetails = ({ car }: Props) => {
          <Flex flexDirection="column" justifyContent="center">
             <Text textStyle="3xl">{car.model}</Text>
             <Text textStyle="xl">
-               {car.vendor} {`(${car.carType})`}
+               {car.vendor} {`(${CAR_TYPE_DISPLAY_VALUES[car.type]})`}
             </Text>
             {car?.available ? (
                <>

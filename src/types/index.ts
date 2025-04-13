@@ -9,7 +9,7 @@ export type Car = {
    id: string
    model: string
    vendor: string
-   carType: CarType
+   type: CarType
    available: boolean
    location: Location
    address?: {

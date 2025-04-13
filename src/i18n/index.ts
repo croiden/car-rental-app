@@ -7,9 +7,9 @@ i18n.use(initReactI18next).init({
          translation: {
             available_cars: 'Available Cars',
             rented_cars: 'Rented Cars',
-            carType_sedan: 'Sedan',
-            carType_suv: 'SUV',
-            carType_hatchback: 'Hatchback',
+            car_type_sedan: 'Sedan',
+            car_type_suv: 'SUV',
+            car_type_hatchback: 'Hatchback',
             no_available_cars: 'No cars available',
             no_available_cars_desc: 'You can check back later for new arrivals.',
             model: 'Model',

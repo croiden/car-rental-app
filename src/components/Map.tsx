@@ -6,6 +6,7 @@ import { useCarStore } from '../store/useCarStore'
 import RentModalView from './RentModalView'
 import { Flex, Text } from '@chakra-ui/react'
 import { base64 } from './base64'
+import { CAR_TYPE_DISPLAY_VALUES } from '@/constants'
 
 export const position: LatLngTuple = [24.75, 55] // Default position
 
@@ -49,7 +50,7 @@ export default function App() {
                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             {availableCars.map((carId) => {
-               const { id, model, location, address, vendor, carType } = cars[carId]
+               const { id, model, location, address, vendor, type } = cars[carId]
                return (
                   <Marker
                      position={[location.lat, location.lng]}
@@ -70,7 +71,7 @@ export default function App() {
                               {model}
                            </Text>
                            <Text fontSize="md">
-                              {vendor} {`(${carType})`}
+                              {vendor} {`(${CAR_TYPE_DISPLAY_VALUES[type]})`}
                            </Text>
                            {address ? (
                               <Text fontSize="md" color="gray.500">

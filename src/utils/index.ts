@@ -36,7 +36,7 @@ export const filterCars = (carIds: string[], cars: Record<string, Car>, searchTe
       return (
          car.model.toLowerCase().includes(lowerCaseSearchTerm) ||
          car.vendor.toLowerCase().includes(lowerCaseSearchTerm) ||
-         car.carType.toLowerCase().includes(lowerCaseSearchTerm)
+         car.type.toLowerCase().includes(lowerCaseSearchTerm)
       )
    })
 }
