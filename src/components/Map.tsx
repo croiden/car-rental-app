@@ -1,23 +1,28 @@
+/** @jsxImportSource @emotion/react */
 import { useState } from 'react'
 import type { LatLngTuple } from 'leaflet'
 import L from 'leaflet'
 import { MapContainer, Marker, TileLayer, Popup } from 'react-leaflet'
+import { Flex, Text } from '@chakra-ui/react'
+import { css } from '@emotion/react'
+
 import { useCarStore } from '../store/useCarStore'
 import RentModalView from './RentModalView'
-import { Flex, Text } from '@chakra-ui/react'
 import { base64 } from './base64'
 import { CAR_TYPE_DISPLAY_VALUES } from '@/constants'
+
+const PopupContentClass = css`
+   p {
+      margin: 0 !important;
+   }
+`
 
 export const position: LatLngTuple = [24.75, 55] // Default position
 
 const icon = L.icon({
    iconUrl: base64,
    iconSize: [70, 70],
-   //  iconAnchor: [17, 46],
    popupAnchor: [0, -20],
-   //  shadowSize: [50, 64], // size of the shadow
-   //  shadowAnchor: [4, 62], // the same for the shadow
-
    className: 'leaflet-marker-icon',
 })
 
@@ -63,10 +68,9 @@ export default function App() {
                         mouseover: (event) => event.target.openPopup(),
                         mouseout: (event) => event.target.closePopup(),
                      }}
-                     //  rotate the marker icon
                   >
                      <Popup closeButton={false} minWidth={150}>
-                        <Flex direction={'column'} gap={2}>
+                        <Flex direction={'column'} gap={2} css={PopupContentClass}>
                            <Text fontSize="lg" fontWeight="bold">
                               {model}
                            </Text>
