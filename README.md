@@ -7,7 +7,14 @@ This project was bootstrapped with [Vite](https://vitejs.dev/) and uses [React](
 ### build and run the app using container:
 
 ```bash
-docker compose up --build
+  docker compose up --build
+```
+
+### run the app using npm:
+
+```bash
+  npm install
+  npm run dev
 ```
 
 ### Playwright tests results
