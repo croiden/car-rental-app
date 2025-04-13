@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Avatar, Button, Center, Flex, Table } from '@chakra-ui/react'
 import { IoMdReturnRight } from 'react-icons/io'
 import { Tooltip } from '@/components/ui/tooltip'
@@ -17,6 +17,8 @@ const RentedCarsTable = () => {
    const { t } = useTranslation()
    const { rentedCars, cars, returnCar, selectedCarId, setSelectedCarId, updateAddress } = useCarStore((state) => state)
    const [showModal, setShowModal] = useState<boolean>(false)
+
+   const [searchTerm, setSearchTerm] = useState<string | null>(null)
    const [filteredCars, setFilteredCars] = useState<string[]>(rentedCars)
 
    const handleReturnCar = (carId: string) => {
@@ -42,9 +44,17 @@ const RentedCarsTable = () => {
          })
    }
 
-   const handleSearch = (searchTerm: string) => {
-      setFilteredCars(filterCars(rentedCars, cars, searchTerm))
-   }
+   const handleSearch = useCallback((searchTerm: string) => {
+      setSearchTerm(searchTerm)
+   }, [])
+
+   useEffect(() => {
+      if (searchTerm === null || searchTerm === '') {
+         setFilteredCars(rentedCars)
+      } else {
+         setFilteredCars(filterCars(rentedCars, cars, searchTerm, ['model', 'bookedBy']))
+      }
+   }, [rentedCars, cars, searchTerm])
 
    if (rentedCars.length === 0) {
       return (
@@ -62,7 +72,7 @@ const RentedCarsTable = () => {
 
    return (
       <Flex direction="column" gap={4} pt={1}>
-         <SearchInput onChange={handleSearch} />
+         <SearchInput onChange={handleSearch} placeholder={t('search_by_car_model_booked_by')} />
          {filteredCars.length > 0 ? (
             <Table.ScrollArea
                h={{
@@ -81,7 +91,7 @@ const RentedCarsTable = () => {
                      </Table.Row>
                   </Table.Header>
                   <Table.Body>
-                     {rentedCars.map((carId) => {
+                     {filteredCars.map((carId) => {
                         const { id, model, bookedBy, bookedAt } = cars[carId]
                         return (
                            <Table.Row key={id}>

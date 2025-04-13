@@ -14,18 +14,12 @@ export const formatDate = (date: Date): string => {
    return date.toLocaleString('en-US', options)
 }
 
-export function debounce<T extends (...args: any[]) => void>(func: T, delay: number): (...args: Parameters<T>) => void {
-   let timer: ReturnType<typeof setTimeout>
-
-   return function (...args: Parameters<T>) {
-      clearTimeout(timer)
-      timer = setTimeout(() => {
-         func(...args)
-      }, delay)
-   }
-}
-
-export const filterCars = (carIds: string[], cars: Record<string, Car>, searchTerm: string): string[] => {
+export const filterCars = (
+   carIds: string[],
+   cars: Record<string, Car>,
+   searchTerm: string,
+   filterColumns: string[] = ['model', 'vendor', 'type'],
+): string[] => {
    if (!searchTerm || searchTerm === '') return carIds
    console.info('search counter')
 
@@ -33,11 +27,13 @@ export const filterCars = (carIds: string[], cars: Record<string, Car>, searchTe
 
    return carIds.filter((carId) => {
       const car = cars[carId]
-      return (
-         car.model.toLowerCase().includes(lowerCaseSearchTerm) ||
-         car.vendor.toLowerCase().includes(lowerCaseSearchTerm) ||
-         car.type.toLowerCase().includes(lowerCaseSearchTerm)
-      )
+      return filterColumns.some((column) => {
+         const value = car[column as keyof Car]
+         if (typeof value === 'string') {
+            return value.toLowerCase().includes(lowerCaseSearchTerm)
+         }
+         return false
+      })
    })
 }
 

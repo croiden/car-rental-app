@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Button, Center, Flex, Table } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import { Tooltip } from '@/components/ui/tooltip'
@@ -15,6 +15,7 @@ const AvailableCarsTable = () => {
    const { availableCars, cars, selectedCarId, setSelectedCarId, rentCar } = useCarStore((state) => state)
    const [showModal, setShowModal] = useState<boolean>(false)
 
+   const [searchTerm, setSearchTerm] = useState<string | null>(null)
    const [filteredCars, setFilteredCars] = useState<string[]>(availableCars)
 
    const handleRentCar = (carId: string) => {
@@ -34,9 +35,17 @@ const AvailableCarsTable = () => {
       rentCar(carId, userName)
    }
 
-   const handleSearch = (searchTerm: string) => {
-      setFilteredCars(filterCars(availableCars, cars, searchTerm))
-   }
+   const handleSearch = useCallback((searchTerm: string) => {
+      setSearchTerm(searchTerm)
+   }, [])
+
+   useEffect(() => {
+      if (searchTerm === null || searchTerm === '') {
+         setFilteredCars(availableCars)
+      } else {
+         setFilteredCars(filterCars(availableCars, cars, searchTerm))
+      }
+   }, [availableCars, cars, searchTerm])
 
    if (availableCars.length === 0) {
       return (
@@ -54,7 +63,7 @@ const AvailableCarsTable = () => {
 
    return (
       <Flex direction="column" gap={4} pt={1}>
-         <SearchInput onChange={handleSearch} />
+         <SearchInput onChange={handleSearch} placeholder={t('search_by_car_model_vendor_type')} />
          {filteredCars.length > 0 ? (
             <Table.ScrollArea
                h={{

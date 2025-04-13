@@ -34,6 +34,10 @@ i18n.use(initReactI18next).init({
             search_for_a_car: 'Search for a car...',
             required_drop_location: 'Drop location is required',
             drop_location: 'Drop Location',
+            no_cars_found: 'No cars found',
+            no_cars_found_desc: 'Please check your search term or try again later.',
+            search_by_car_model_vendor_type: 'Search by car model, vendor, or type',
+            search_by_car_model_booked_by: 'Search by car model or booked by',
          },
       },
       fr: {

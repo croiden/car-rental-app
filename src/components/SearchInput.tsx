@@ -1,32 +1,28 @@
-import { debounce } from '@/utils'
 import { CloseButton, Input, InputGroup } from '@chakra-ui/react'
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useEffect, useRef, useState } from 'react'
+import { useDebounce } from '@uidotdev/usehooks'
+import { IoSearch } from 'react-icons/io5'
 
 interface Props {
+   placeholder: string
    onChange?: (value: string) => void
 }
 
-const SearchInput = ({ onChange }: Props) => {
-   const { t } = useTranslation()
-   const [value, setValue] = useState<string>('')
+const SearchInput = ({ placeholder, onChange }: Props) => {
+   const [value, setValue] = useState<string | null>(null)
    const inputRef = useRef<HTMLInputElement | null>(null)
+
+   const debouncedSearchTerm = useDebounce(value, 500)
 
    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       setValue(event.target.value)
    }
 
-   // Use useCallback to create a stable debounced function
-   const debouncedChange = useCallback(
-      debounce((val: string) => {
-         if (onChange) onChange(val)
-      }, 500),
-      [onChange],
-   )
-
    useEffect(() => {
-      debouncedChange(value)
-   }, [value, debouncedChange])
+      if (onChange && debouncedSearchTerm !== null) {
+         onChange(debouncedSearchTerm)
+      }
+   }, [debouncedSearchTerm, onChange])
 
    const endElement = value ? (
       <CloseButton
@@ -40,8 +36,8 @@ const SearchInput = ({ onChange }: Props) => {
    ) : undefined
 
    return (
-      <InputGroup endElement={endElement}>
-         <Input ref={inputRef} placeholder={t('search_for_a_car')} value={value} onChange={handleInputChange} />
+      <InputGroup startElement={<IoSearch />} endElement={endElement}>
+         <Input ref={inputRef} placeholder={placeholder} value={value || ''} onChange={handleInputChange} />
       </InputGroup>
    )
 }
