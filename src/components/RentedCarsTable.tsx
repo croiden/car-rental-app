@@ -51,7 +51,7 @@ const RentedCarsTable = () => {
          <Center
             h={{
                base: 'calc(100vh - 685px)',
-               rca_xl: 'calc(100vh - 400px)',
+               xl: 'calc(100vh - 400px)',
             }}
             minHeight={'250px'}
          >
@@ -67,7 +67,7 @@ const RentedCarsTable = () => {
             <Table.ScrollArea
                h={{
                   base: 'calc(100vh - 685px)',
-                  rca_xl: 'calc(100vh - 270px)',
+                  xl: 'calc(100vh - 270px)',
                }}
                minHeight={'250px'}
             >
@@ -123,7 +123,7 @@ const RentedCarsTable = () => {
             <Center
                h={{
                   base: 'calc(100vh - 685px)',
-                  rca_xl: 'calc(100vh - 400px)',
+                  xl: 'calc(100vh - 400px)',
                }}
                minHeight={'250px'}
             >

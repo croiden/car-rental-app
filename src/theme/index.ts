@@ -14,7 +14,7 @@ const config = defineConfig({
    },
    theme: {
       breakpoints: {
-         rca_xl: '70em', // 1120px
+         xl: '70em', // 1120px
       },
    },
 })

@@ -16,19 +16,19 @@ const PageBody = () => {
          pt={4}
          flexDir={{
             base: 'column-reverse',
-            rca_xl: 'row',
+            xl: 'row',
          }}
       >
          <Box
             minWidth={{
                base: '100%',
-               rca_xl: '550px',
+               xl: '550px',
             }}
          >
             <Card.Root
                h={{
                   base: 'auto',
-                  rca_xl: 'calc(100vh - 100px)',
+                  xl: 'calc(100vh - 100px)',
                }}
                minHeight={'400px'}
             >
@@ -58,7 +58,7 @@ const PageBody = () => {
             w="100%"
             h={{
                base: '400px',
-               rca_xl: 'auto',
+               xl: 'auto',
             }}
          >
             <Map />
