@@ -5,3 +5,12 @@ dist
 *.log
 Dockerfile
 docker-compose.yml
+
+playwright-report
+playwright-test-results
+test-results
+blob-report
+playwright/.cache
+tests
+
+
