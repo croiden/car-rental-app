@@ -4,18 +4,42 @@
 
 This project was bootstrapped with [Vite](https://vitejs.dev/) and uses [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/).
 
-### build and run the app using container:
+### User Guide
+
+- [User Guide](docs/user-guide.md)
+
+### Follow the steps below to run the app locally:
+
+- Clone the repository:
+
+```bash
+  git clone https://github.com/croiden/car-rental-app.git
+  cd car-rental-app
+```
+
+- Run using Docker:
 
 ```bash
   docker compose up --build
 ```
 
-### run the app using npm:
+- Or run using Node.js: (make sure you have Node.js installed (v22.14.0 or higher) and run the following commands)
 
 ```bash
   npm install
   npm run dev
 ```
+
+### Other Available Scripts
+
+In the project directory, you can run:
+
+- `npm run build` - Builds the app for production to the `dist` folder.
+- `npm run preview` - Preview the production build.
+- `npm run lint` - Lints the code using ESLint.
+- `npm run test` - Runs the tests using Playwright.
+- `npm run test:ui` - Runs the tests using Playwright in UI mode.
+- `npm run test:coverage` - Runs the tests using Playwright and generates a coverage report.
 
 ### Playwright tests results
 
