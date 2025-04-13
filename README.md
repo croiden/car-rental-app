@@ -1,3 +1,29 @@
+# Car Rental App
+
+## Getting Started
+
+This project was bootstrapped with [Vite](https://vitejs.dev/) and uses [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/).
+
+### build and run the app using container:
+
+```bash
+docker compose up --build
+```
+
+### Playwright tests results
+
+![Playwright tests results](docs/test-result.png)
+
+### Playwright visual comparison results (snapshot tests)
+
+![Playwright visual comparison results](docs/visual-test-result.png)
+
+### Tests coverage results
+
+![Tests coverage](docs/test-coverage.png)
+
+## Below README content was auto generated during the template creation process:
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -51,10 +77,4 @@ export default tseslint.config({
       ...reactDom.configs.recommended.rules,
    },
 })
-```
-
-build and run the app using container:
-
-```bash
-docker compose up --build
 ```
