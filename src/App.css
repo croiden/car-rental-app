@@ -10,10 +10,7 @@
 }
 
 .leaflet-marker-icon {
-   /* background-color: #ff0000; */
-   border-radius: 50%;
-   border: 2px solid #fff;
-   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
 }
 
 .rca-leaflet-popup .leaflet-popup-content {

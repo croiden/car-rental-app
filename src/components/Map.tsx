@@ -8,9 +8,13 @@ import { css } from '@emotion/react'
 
 import { useCarStore } from '../store/useCarStore'
 import RentModalView from './RentModalView'
-import { base64 } from './base64'
 import { CAR_TYPE_DISPLAY_VALUES } from '@/constants'
 import { useColorModeValue } from '@/components/ui/color-mode'
+
+import suv from '@/assets/suv.png'
+import sedan from '@/assets/sedan.png'
+import hatchback from '@/assets/hatchback.png'
+import { CarType } from '@/enums'
 
 const PopupContentClass = css`
    p {
@@ -20,12 +24,38 @@ const PopupContentClass = css`
 
 export const position: LatLngTuple = [24.75, 55] // Default position
 
-const icon = L.icon({
-   iconUrl: base64,
-   iconSize: [70, 70],
+const suvIcon = L.icon({
+   iconUrl: suv,
+   iconSize: [75, 75],
    popupAnchor: [0, -20],
    className: 'leaflet-marker-icon',
 })
+
+const sedanIcon = L.icon({
+   iconUrl: sedan,
+   iconSize: [60, 60],
+   popupAnchor: [0, -20],
+   className: 'leaflet-marker-icon',
+})
+
+const hatchbackIcon = L.icon({
+   iconUrl: hatchback,
+   iconSize: [60, 60],
+   popupAnchor: [0, -20],
+   className: 'leaflet-marker-icon',
+})
+
+const getIconByType = (type: CarType) => {
+   switch (type) {
+      case CarType.SUV:
+         return suvIcon
+      case CarType.SEDAN:
+         return sedanIcon
+      case CarType.HATCHBACK:
+      default:
+         return hatchbackIcon
+   }
+}
 
 export default function App() {
    const { availableCars, cars, selectedCarId, setSelectedCarId, rentCar } = useCarStore((state) => state)
@@ -64,7 +94,7 @@ export default function App() {
                   <Marker
                      position={[location.lat, location.lng]}
                      key={id}
-                     icon={icon}
+                     icon={getIconByType(type)}
                      eventHandlers={{
                         click: () => {
                            handleRentCar(id)
