@@ -3,21 +3,20 @@ import { createSystem, defaultConfig, defineConfig } from '@chakra-ui/react'
 const config = defineConfig({
    globalCss: {
       'html, body': {
-         backgroundColor: 'gray.100',
+         colorPalette: 'teal', // Change this to any color palette you prefer
+         _light: {
+            backgroundColor: 'gray.100',
+         },
+         _dark: {
+            backgroundColor: 'gray.900',
+         },
       },
    },
    theme: {
       breakpoints: {
-         sm: '320px',
-         md: '768px',
-         lg: '960px',
-         xl: '1200px',
+         rca_xl: '70em', // 1120px
       },
    },
-   //     // tokens: {
-   //     //    colors: {},
-   //     // },
-   //  },
 })
 
-export default createSystem(defaultConfig, config)
+export const system = createSystem(defaultConfig, config)

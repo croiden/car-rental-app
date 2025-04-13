@@ -48,7 +48,13 @@ const RentedCarsTable = () => {
 
    if (rentedCars.length === 0) {
       return (
-         <Center height="calc(100vh - 400px)">
+         <Center
+            h={{
+               base: 'calc(100vh - 685px)',
+               rca_xl: 'calc(100vh - 400px)',
+            }}
+            minHeight={'250px'}
+         >
             <EmptyView title={t('no_rented_cars')} description={t('no_rented_cars_desc')} />
          </Center>
       )
@@ -58,7 +64,13 @@ const RentedCarsTable = () => {
       <Flex direction="column" gap={4} pt={1}>
          <SearchInput onChange={handleSearch} />
          {filteredCars.length > 0 ? (
-            <Table.ScrollArea height="calc(100vh - 270px)">
+            <Table.ScrollArea
+               h={{
+                  base: 'calc(100vh - 685px)',
+                  rca_xl: 'calc(100vh - 270px)',
+               }}
+               minHeight={'250px'}
+            >
                <Table.Root size="sm" stickyHeader>
                   <Table.Header>
                      <Table.Row>
@@ -78,7 +90,7 @@ const RentedCarsTable = () => {
                               </Table.Cell>
                               <Table.Cell>
                                  <Flex gap={2} alignItems="center">
-                                    <Avatar.Root variant={'solid'} colorPalette={'cyan'} size={'2xs'}>
+                                    <Avatar.Root variant={'solid'} size={'2xs'}>
                                        <Avatar.Fallback name={bookedBy} />
                                     </Avatar.Root>
                                     <TableCell>{bookedBy}</TableCell>
@@ -88,7 +100,6 @@ const RentedCarsTable = () => {
                               <Table.Cell textAlign="end">
                                  <Tooltip content={t('return_tooltip')} positioning={{ placement: 'top' }}>
                                     <Button
-                                       colorPalette="orange"
                                        variant="solid"
                                        onClick={() => handleReturnCar(carId)}
                                        aria-label={
@@ -109,7 +120,13 @@ const RentedCarsTable = () => {
                </Table.Root>
             </Table.ScrollArea>
          ) : (
-            <Center height="calc(100vh - 400px)">
+            <Center
+               h={{
+                  base: 'calc(100vh - 685px)',
+                  rca_xl: 'calc(100vh - 400px)',
+               }}
+               minHeight={'250px'}
+            >
                <EmptyView title={t('no_cars_found')} description={t('no_cars_found_desc')} />
             </Center>
          )}

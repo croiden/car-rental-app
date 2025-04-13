@@ -1,5 +1,6 @@
 import { Button, Dialog, Field, Input, Portal, Stack } from '@chakra-ui/react'
 import { useRef, useState } from 'react'
+import { MdCarRental } from 'react-icons/md'
 import { toaster } from '@/components/ui/toaster'
 import { Car } from '../types'
 import CarDetails from './CarDetails'
@@ -35,7 +36,7 @@ const RentModalView = ({ car, onClose, onSubmit }: Props) => {
          initialFocusEl={() => ref.current}
          defaultOpen
          placement={'center'}
-         size="xl"
+         size={'xl'}
          scrollBehavior="inside"
          onExitComplete={onClose}
       >
@@ -68,7 +69,10 @@ const RentModalView = ({ car, onClose, onSubmit }: Props) => {
                      <Button variant="outline" onClick={onClose}>
                         {t('cancel')}
                      </Button>
-                     <Button onClick={handleSubmit}>{t('rent')}</Button>
+                     <Button onClick={handleSubmit}>
+                        <MdCarRental />
+                        {t('rent')}
+                     </Button>
                   </Dialog.Footer>
                </Dialog.Content>
             </Dialog.Positioner>

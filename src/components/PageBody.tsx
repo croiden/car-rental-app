@@ -11,9 +11,27 @@ const PageBody = () => {
    const { availableCars, rentedCars } = useCarStore((state) => state)
 
    return (
-      <Flex gap={4} pt={4}>
-         <Box minW="550px">
-            <Card.Root height={'calc(100vh - 100px)'}>
+      <Flex
+         gap={4}
+         pt={4}
+         flexDir={{
+            base: 'column-reverse',
+            rca_xl: 'row',
+         }}
+      >
+         <Box
+            minWidth={{
+               base: '100%',
+               rca_xl: '550px',
+            }}
+         >
+            <Card.Root
+               h={{
+                  base: 'auto',
+                  rca_xl: 'calc(100vh - 100px)',
+               }}
+               minHeight={'400px'}
+            >
                <Card.Body>
                   <Tabs.Root lazyMount unmountOnExit defaultValue="AVAILABLE">
                      <Tabs.List>
@@ -36,7 +54,13 @@ const PageBody = () => {
                </Card.Body>
             </Card.Root>
          </Box>
-         <Card.Root w="100%">
+         <Card.Root
+            w="100%"
+            h={{
+               base: '400px',
+               rca_xl: 'auto',
+            }}
+         >
             <Map />
          </Card.Root>
       </Flex>

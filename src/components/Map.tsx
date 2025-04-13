@@ -10,6 +10,7 @@ import { useCarStore } from '../store/useCarStore'
 import RentModalView from './RentModalView'
 import { base64 } from './base64'
 import { CAR_TYPE_DISPLAY_VALUES } from '@/constants'
+import { useColorModeValue } from '@/components/ui/color-mode'
 
 const PopupContentClass = css`
    p {
@@ -29,6 +30,9 @@ const icon = L.icon({
 export default function App() {
    const { availableCars, cars, selectedCarId, setSelectedCarId, rentCar } = useCarStore((state) => state)
    const [showModal, setShowModal] = useState<boolean>(false)
+
+   const backgroundColor = useColorModeValue('white', 'gray.900')
+   const color = useColorModeValue('gray.900', 'gray.100')
 
    const handleRentCar = (carId: string) => {
       if (!carId) return
@@ -69,12 +73,19 @@ export default function App() {
                         mouseout: (event) => event.target.closePopup(),
                      }}
                   >
-                     <Popup closeButton={false} minWidth={150}>
-                        <Flex direction={'column'} gap={2} css={PopupContentClass}>
-                           <Text fontSize="lg" fontWeight="bold">
+                     <Popup closeButton={false} minWidth={150} className="rca-leaflet-popup">
+                        <Flex
+                           direction={'column'}
+                           gap={2}
+                           css={PopupContentClass}
+                           bg={backgroundColor}
+                           p={4}
+                           borderRadius={12}
+                        >
+                           <Text fontSize="lg" fontWeight="bold" color={color}>
                               {model}
                            </Text>
-                           <Text fontSize="md">
+                           <Text fontSize="md" color={color}>
                               {vendor} {`(${CAR_TYPE_DISPLAY_VALUES[type]})`}
                            </Text>
                            {address ? (

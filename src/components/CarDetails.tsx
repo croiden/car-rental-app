@@ -11,16 +11,31 @@ interface Props {
 const CarDetails = ({ car }: Props) => {
    const { t } = useTranslation()
    return (
-      <Flex gap={4} border="1px solid" borderColor="gray.200" borderRadius="md">
+      <Flex
+         gap={4}
+         border="1px solid"
+         borderColor="gray.200"
+         borderRadius="md"
+         flexDir={{
+            base: 'column',
+            md: 'row',
+         }}
+      >
          <Image
             rounded="md"
             src={car?.imageUrl}
             alt={`${car.model} image`}
-            width="450px"
             minHeight={'300px'}
-            minWidth={'450px'}
+            width={{
+               base: '100%',
+               md: '450px',
+            }}
+            minWidth={{
+               base: '100%',
+               md: '450px',
+            }}
          />
-         <Flex flexDirection="column" justifyContent="center">
+         <Flex flexDirection="column" justifyContent="center" p={4}>
             <Text textStyle="3xl">{car.model}</Text>
             <Text textStyle="xl">
                {car.vendor} {`(${CAR_TYPE_DISPLAY_VALUES[car.type]})`}

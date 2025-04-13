@@ -40,7 +40,13 @@ const AvailableCarsTable = () => {
 
    if (availableCars.length === 0) {
       return (
-         <Center height="calc(100vh - 400px)">
+         <Center
+            h={{
+               base: 'calc(100vh - 685px)',
+               rca_xl: 'calc(100vh - 400px)',
+            }}
+            minHeight={'250px'}
+         >
             <EmptyView title={t('no_available_cars')} description={t('no_available_cars_desc')} />
          </Center>
       )
@@ -50,7 +56,13 @@ const AvailableCarsTable = () => {
       <Flex direction="column" gap={4} pt={1}>
          <SearchInput onChange={handleSearch} />
          {filteredCars.length > 0 ? (
-            <Table.ScrollArea height="calc(100vh - 270px)">
+            <Table.ScrollArea
+               h={{
+                  base: 'calc(100vh - 685px)',
+                  rca_xl: 'calc(100vh - 270px)',
+               }}
+               minHeight={'250px'}
+            >
                <Table.Root size="sm" stickyHeader>
                   <Table.Header>
                      <Table.Row>
@@ -75,7 +87,6 @@ const AvailableCarsTable = () => {
                               <Table.Cell textAlign="end">
                                  <Tooltip content={t('rent_tooltip')} positioning={{ placement: 'top' }}>
                                     <Button
-                                       colorPalette="teal"
                                        variant="solid"
                                        onClick={() => handleRentCar(carId)}
                                        aria-label={
@@ -96,7 +107,13 @@ const AvailableCarsTable = () => {
                </Table.Root>
             </Table.ScrollArea>
          ) : (
-            <Center height="calc(100vh - 400px)">
+            <Center
+               h={{
+                  base: 'calc(100vh - 685px)',
+                  rca_xl: 'calc(100vh - 400px)',
+               }}
+               minHeight={'250px'}
+            >
                <EmptyView title={t('no_cars_found')} description={t('no_cars_found_desc')} />
             </Center>
          )}

@@ -1,5 +1,6 @@
 import { Button, Dialog, Text, Portal, Stack } from '@chakra-ui/react'
 import { useRef, useState } from 'react'
+import { IoMdReturnRight } from 'react-icons/io'
 import { toaster } from '@/components/ui/toaster'
 import { Car } from '../types'
 import CarDetails from './CarDetails'
@@ -82,7 +83,10 @@ const RentModalView = ({ car, onClose, onSubmit }: Props) => {
                      <Button variant="outline" onClick={onClose}>
                         {t('cancel')}
                      </Button>
-                     <Button onClick={handleSubmit}>{t('return')}</Button>
+                     <Button onClick={handleSubmit}>
+                        <IoMdReturnRight />
+                        {t('return')}
+                     </Button>
                   </Dialog.Footer>
                </Dialog.Content>
             </Dialog.Positioner>

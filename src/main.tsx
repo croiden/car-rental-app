@@ -10,7 +10,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')!).render(
    <StrictMode>
-      <Provider forcedTheme={'light'}>
+      <Provider>
          <App />
          <Toaster />
       </Provider>
