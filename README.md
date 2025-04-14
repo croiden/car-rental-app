@@ -91,6 +91,22 @@ In the project directory, you can run:
 
 ![Tests coverage](docs/test-coverage.png)
 
+### Suggested Improvements:
+Here are a few enhancements that can be made to improve the codebase and user experience:
+
+Car List View:
+
+- Implement Pagination or Infinite Scroll: Improve performance by loading cars in chunks, especially when handling a large dataset.
+- Add Sorting Options: Enable sorting by parameters such as model, vendor, booked by, and booking time to enhance user navigation and usability.
+
+Search Functionality:
+
+- Autocomplete Suggestions: As the user types in the search bar, display a dropdown with matching results. This improves discoverability and reduces typing effort.
+
+Return Car Flow:
+
+- Add Search Dropdown for Return Location: In addition to map-based selection, offer a search dropdown for users to quickly find and select their return location. This assists users who may not be comfortable using the map.
+
 ## Below README content was auto generated during the template creation process:
 
 # React + TypeScript + Vite
