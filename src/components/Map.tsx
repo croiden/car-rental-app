@@ -11,9 +11,9 @@ import RentModalView from './RentModalView'
 import { CAR_TYPE_DISPLAY_VALUES } from '@/constants'
 import { useColorModeValue } from '@/components/ui/color-mode'
 
-import suv from '@/assets/suv.png'
-import sedan from '@/assets/sedan.png'
-import hatchback from '@/assets/hatchback.png'
+import suv from '@/assets/suv.webp'
+import sedan from '@/assets/sedan.webp'
+import hatchback from '@/assets/hatchback.webp'
 import { CarType } from '@/enums'
 
 const PopupContentClass = css`
@@ -26,14 +26,14 @@ export const position: LatLngTuple = [24.75, 55] // Default position
 
 const suvIcon = L.icon({
    iconUrl: suv,
-   iconSize: [75, 75],
+   iconSize: [69.1, 71.7],
    popupAnchor: [0, -20],
    className: 'leaflet-marker-icon',
 })
 
 const sedanIcon = L.icon({
    iconUrl: sedan,
-   iconSize: [60, 60],
+   iconSize: [65, 60],
    popupAnchor: [0, -20],
    className: 'leaflet-marker-icon',
 })
