@@ -8,6 +8,10 @@ This project is built with [React](https://reactjs.org/) and [TypeScript](https:
 
 - [View User Guide (PDF)](docs/user-guide.pdf)
 
+### 🔶 Activity Diagram
+
+- [View Activity Diagram (PNG)](docs/activity-diagram.png)
+
 ---
 
 ### 🚀 Getting Started
