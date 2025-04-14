@@ -7,7 +7,7 @@ test.beforeEach(async ({ page }) => {
 test.describe('Car Rental App Visual Comparison', () => {
    test('should render the page with navbar, left panel and map view', async ({ page }) => {
       // wait for leaflet map to load, add some delay
-      await page.waitForTimeout(6000)
+      await page.waitForTimeout(10000)
 
       await expect(page).toHaveScreenshot()
    })
