@@ -20,6 +20,8 @@ Follow the steps below to run the app locally:
 
 #### 🐳 Option 1: Run with Docker
 
+Note: Docker is required to run the app in a containerized environment. Tested with Docker version 28.0.4
+
 ```bash
 git clone https://github.com/croiden/car-rental-app.git
 cd car-rental-app
