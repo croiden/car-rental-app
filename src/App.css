@@ -9,10 +9,6 @@
    height: 100%;
 }
 
-.leaflet-marker-icon {
-   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
-}
-
 .rca-leaflet-popup .leaflet-popup-content {
    margin: 0px !important;
 }

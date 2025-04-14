@@ -1,4 +1,4 @@
-import { CarType } from '../enums'
+import { CarTypeEnum } from '../enums'
 
 export type Location = {
    lat: number
@@ -9,7 +9,7 @@ export type Car = {
    id: string
    model: string
    vendor: string
-   type: CarType
+   type: CarTypeEnum
    available: boolean
    location: Location
    address?: {

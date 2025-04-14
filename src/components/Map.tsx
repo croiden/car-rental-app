@@ -14,7 +14,7 @@ import { useColorModeValue } from '@/components/ui/color-mode'
 import suv from '@/assets/suv.webp'
 import sedan from '@/assets/sedan.webp'
 import hatchback from '@/assets/hatchback.webp'
-import { CarType } from '@/enums'
+import { CarTypeEnum } from '@/enums'
 
 const PopupContentClass = css`
    p {
@@ -28,30 +28,27 @@ const suvIcon = L.icon({
    iconUrl: suv,
    iconSize: [69.1, 71.7],
    popupAnchor: [0, -20],
-   className: 'leaflet-marker-icon',
 })
 
 const sedanIcon = L.icon({
    iconUrl: sedan,
    iconSize: [65, 60],
    popupAnchor: [0, -20],
-   className: 'leaflet-marker-icon',
 })
 
 const hatchbackIcon = L.icon({
    iconUrl: hatchback,
    iconSize: [60, 60],
    popupAnchor: [0, -20],
-   className: 'leaflet-marker-icon',
 })
 
-const getIconByType = (type: CarType) => {
+const getIconByType = (type: CarTypeEnum) => {
    switch (type) {
-      case CarType.SUV:
+      case CarTypeEnum.SUV:
          return suvIcon
-      case CarType.SEDAN:
+      case CarTypeEnum.SEDAN:
          return sedanIcon
-      case CarType.HATCHBACK:
+      case CarTypeEnum.HATCHBACK:
       default:
          return hatchbackIcon
    }
