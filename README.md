@@ -1,55 +1,87 @@
 # Car Rental App
 
-## Getting Started
+This project is built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/), and was bootstrapped using [Vite](https://vitejs.dev/).
 
-This project was bootstrapped with [Vite](https://vitejs.dev/) and uses [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/).
+---
 
-### User Guide
+### 📘 User Guide
 
-- [User Guide](docs/user-guide.md)
+- [View User Guide (PDF)](docs/user-guide.pdf)
 
-### Follow the steps below to run the app locally:
+---
 
-- Clone the repository:
+### 🚀 Getting Started
 
-```bash
-  git clone https://github.com/croiden/car-rental-app.git
-  cd car-rental-app
-```
+Follow the steps below to run the app locally:
 
-- Run using Docker:
+#### 🐳 Option 1: Run with Docker
 
 ```bash
-  docker compose up --build
+git clone https://github.com/croiden/car-rental-app.git
+cd car-rental-app
+docker compose up --build
+
 ```
 
-- Or run using Node.js: (make sure you have Node.js installed (v22.14.0 or higher) and run the following commands)
+Once the build completes, the app will be available at:
+👉 http://localhost:8081
+
+#### 🧑‍💻 Option 2: Run with Node.js
+
+Note: Node.js v22.14.0 or higher is required.
+[Optional] Use nvm to install and manage the Node version.
 
 ```bash
-  npm install
-  npm run dev
+# Clone the repo
+git clone https://github.com/croiden/car-rental-app.git
+cd car-rental-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-### Other Available Scripts
+### 📦 Available Scripts
 
 In the project directory, you can run:
 
-- `npm run build` - Builds the app for production to the `dist` folder.
-- `npm run preview` - Preview the production build.
-- `npm run lint` - Lints the code using ESLint.
-- `npm run test` - Runs the tests using Playwright.
-- `npm run test:ui` - Runs the tests using Playwright in UI mode.
-- `npm run test:coverage` - Runs the tests using Playwright and generates a coverage report.
+- `npm run build` – Builds the app for production to the dist folder.
 
-### Playwright tests results
+- `npm run preview` – Previews the production build.
+
+- `npm run lint` – Lints the code using ESLint.
+
+- `npm run test` – Runs tests using Playwright.
+
+- `npm run test:ui` – Runs Playwright tests in UI mode.
+
+- `npm run test:coverage` – Runs Playwright tests and generates a coverage report.
+
+### 🛠 Tech Stack
+
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that compiles to clean JavaScript output.
+- [Vite](https://vitejs.dev/) - A fast build tool and development server.
+- [Chakra UI](https://chakra-ui.com/) - A simple, modular, and accessible component library for React.
+- [zustand](https://zustand-demo.pmnd.rs/) - A small, fast, and scalable bearbones state-management solution.
+- [React i18next](https://react.i18next.com/) - Internationalization for React done right.
+- [React Leaflet](https://react-leaflet.js.org/) - React components for Leaflet maps.
+- [Playwright](https://playwright.dev/) - A Node.js library to automate Chromium, Firefox, and WebKit with a single API.
+- [Docker](https://www.docker.com/) - A platform for developing, shipping, and running applications in containers.
+
+## ✅ Test Results
+
+### 📈 Playwright Test Summary
 
 ![Playwright tests results](docs/test-result.png)
 
-### Playwright visual comparison results (snapshot tests)
+### 🖼️ Visual Snapshot Comparisons
 
 ![Playwright visual comparison results](docs/visual-test-result.png)
 
-### Tests coverage results
+### 📊 Code Coverage
 
 ![Tests coverage](docs/test-coverage.png)
 
