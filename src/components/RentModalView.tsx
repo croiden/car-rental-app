@@ -18,7 +18,7 @@ const RentModalView = ({ car, onClose, onSubmit }: Props) => {
    const [userNameFieldValid, setUserNameFieldValid] = useState<boolean>(true)
 
    const handleSubmit = () => {
-      const userName = ref.current?.value
+      const userName = ref.current?.value ? ref.current.value.trimEnd() : ''
       if (!userName) {
          setUserNameFieldValid(false)
          ref.current?.focus()
